@@ -15,3 +15,5 @@ end
 
 require 'cucumber/rails/rspec'
 require 'webrat/core/matchers'
+
+Dir[File.expand_path("#{RAILS_ROOT}/factories/**/*.rb")].uniq.each {|f| require f}

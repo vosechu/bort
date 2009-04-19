@@ -45,3 +45,5 @@ Spec::Runner.configure do |config|
   # 
   # For more information take a look at Spec::Runner::Configuration and Spec::Runner
 end
+
+Dir[File.expand_path("#{RAILS_ROOT}/factories/**/*.rb")].uniq.each {|f| require f}
