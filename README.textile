@@ -91,4 +91,4 @@ h2. Credits
 
 Bort put together by people at "Fudge":http://www.fudgestudios.com/ 
 
-This fork by Jay McGavren: http://jay.mcgavren.com
+This fork by "Jay McGavren":http://jay.mcgavren.com
