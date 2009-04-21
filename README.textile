@@ -45,6 +45,10 @@ h3. Cucumber
 
 You should also be integration testing your code.  Cucumber has been added.
 
+h3. Factory Girl
+
+Factories make object creation for use in specs less painful and more versatile.
+
 h3. Exception Notifier
 
 You don't want your applications to crash and burn so Exception Notifier is already installed to let 
