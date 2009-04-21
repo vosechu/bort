@@ -10,21 +10,18 @@ h2. Install
 
 * Download and unzip Bort
 * Edit the database.yml and the settings.yml files
-* Changed the default password in the bort migration
+* Change the default password in the bort migration
 * Edit the REST_AUTH_SITE_KEY in each of the environment files
 * Rake db:migrate
 * Have a brew and celebrate
 
 h2. Plugins Installed
 
-Bort comes with a few commonly used plugins installed and already setup.
+This fork of Bort has had some of its default plugins dropped, new ones added, and most of the rest updated.
 
-h3. RESTful Authentication
+h3. Authlogic
 
-RESTful Authentication is already setup. The routes are setup, along with the mailers and observers.
-Forgotten password comes setup, so you don't have to mess around setting it up with every project.
-
-The AASM plugin comes pre-installed. RESTful Authentication is also setup to use user activation.
+RESTful Authentication has been replaced with Authlogic.  A few controllers are already set up as in the Authlogic examples.
 
 h3. User Roles
 
@@ -33,7 +30,7 @@ admin role is predefined along with a default admin user. See the migrations for
 
 h3. Open ID Authentication
 
-Bort, as of 0.3, has Open ID integrated with RESTful Authentication. Rejoice!
+Bort, as of 0.3, has Open ID. Rejoice!
 
 h3. Will Paginate
 
@@ -43,6 +40,10 @@ h3. Rspec & Rspec-rails
 
 You should be testing your code, so Bort comes with Rspec and Rspec-rails already installed so you're
 ready to roll.
+
+h3. Cucumber
+
+You should also be integration testing your code.  Cucumber has been added.
 
 h3. Exception Notifier
 
@@ -56,7 +57,7 @@ load times and saves you bandwidth.
 
 h2. Routes
 
-The routes for RESful Auth and the forgot password stuff are already sorted for you.
+The routes for Authlogic are already sorted for you.
 
 h2. Settings YAML
 
@@ -76,10 +77,6 @@ you can ignore it. Just update config/deploy/production.rb with your deployment 
 
 More info on capistrano-ext/multistage deployments can be found here: http://weblog.jamisbuck.org/2007/7/23/capistrano-multistage
 
-h2. Uses the Database for Sessions
-
-Bort is setup to use the database to store sessions by default. 
-
 h2. Misc 
 
 * password and password_confirmation are set up to be filtered
@@ -93,3 +90,5 @@ h2. Misc
 h2. Credits
 
 Bort put together by people at "Fudge":http://www.fudgestudios.com/ 
+
+This fork by Jay McGavren: http://jay.mcgavren.com
