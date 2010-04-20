@@ -4,7 +4,7 @@ h1. Bort
 
 Bort is a base Rails application that makes creating new projects easier and faster. Bort is developed and maintained by "Fudge Studios":http://www.fudgestudios.com, "Jim Neath":http://jimneath.org and "Matt Hall":http://matthall.wordpress.com
 
-This Rails 2.3 fork is by "Jay McGavren":http://jay.mcgavren.com
+This Rails 2.3.5 fork is by "Chuck Vose":http://chuckvose.com and is based on the fork by "Jay McGavren":http://jay.mcgavren.com
 
 h2. Install
 
@@ -18,6 +18,12 @@ h2. Install
 h2. Plugins Installed
 
 This fork of Bort has had some of its default plugins dropped, new ones added, and most of the rest updated.
+
+h3. Bundler
+
+Bundler support has been added. There are some commented gems in the Gemfile for 
+uploading to Heroku but otherwise it is a very small process. You will probably
+need to `bundle install --relock` to get all the gems running. 
 
 h3. Authlogic
 
