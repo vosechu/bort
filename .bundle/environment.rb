@@ -142,7 +142,7 @@ end
 module Bundler
   LOCKED_BY    = '0.9.9'
   FINGERPRINT  = "ee9e1cc4c3187bd0d8c2578a662496b3d13db69c"
-  AUTOREQUIRES = {:test=>[["webrat", false], ["rspec", false], ["rspec-rails", false], ["factory_girl", false], ["cucumber", false], ["faker", false]], :default=>[["nokogiri", false], ["capistrano-ext", false], ["geokit", false], ["mislav-will_paginate", false], ["rubyist-aasm", false], ["mysql", false], ["authlogic", false], ["rails", false]], :development=>[["rails-footnotes", false]]}
+  AUTOREQUIRES = {:test=>[["webrat", false], ["rspec", false], ["rspec-rails", false], ["factory_girl", false], ["faker", false], ["cucumber", false]], :development=>[["rails-footnotes", false]], :default=>[["nokogiri", false], ["capistrano-ext", false], ["geokit", false], ["rubyist-aasm", false], ["mislav-will_paginate", false], ["authlogic", false], ["mysql", false], ["rails", false]]}
   SPECS        = [
         {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/nokogiri-1.4.1/lib", "/Users/vosechu/.bundle/ruby/1.8/gems/nokogiri-1.4.1/ext"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/nokogiri-1.4.1.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/activesupport-2.3.5.gemspec"},
@@ -159,9 +159,9 @@ module Bundler
         {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/rack-test-0.5.3/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/rack-test-0.5.3.gemspec"},
         {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/webrat-0.7.0/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/webrat-0.7.0.gemspec"},
         {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/geokit-1.5.0/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/geokit-1.5.0.gemspec"},
-        {:load_paths=>["/Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.6/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/mislav-will_paginate-2.3.6.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/rubyist-aasm-2.0.2/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/rubyist-aasm-2.0.2.gemspec"},
-        {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/highline-1.5.2/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/highline-1.5.2.gemspec"},
+        {:load_paths=>["/Library/Ruby/Gems/1.8/gems/mislav-will_paginate-2.3.6/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/mislav-will_paginate-2.3.6.gemspec"},
+        {:load_paths=>["/Library/Ruby/Gems/1.8/gems/authlogic-2.1.3/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/authlogic-2.1.3.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/polyglot-0.3.1/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/polyglot-0.3.1.gemspec"},
         {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/treetop-1.4.5/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/treetop-1.4.5.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/diff-lcs-1.1.2/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/diff-lcs-1.1.2.gemspec"},
@@ -169,16 +169,16 @@ module Bundler
         {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/rspec-rails-1.3.2/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/rspec-rails-1.3.2.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/rake-0.8.7/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/rake-0.8.7.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/mysql-2.8.1/lib", "/Library/Ruby/Gems/1.8/gems/mysql-2.8.1/ext"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/mysql-2.8.1.gemspec"},
-        {:load_paths=>["/Library/Ruby/Gems/1.8/gems/authlogic-2.1.3/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/authlogic-2.1.3.gemspec"},
+        {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/highline-1.5.2/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/highline-1.5.2.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/activerecord-2.3.5.gemspec"},
         {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/factory_girl-1.2.4/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/factory_girl-1.2.4.gemspec"},
+        {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/faker-0.3.1/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/faker-0.3.1.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/term-ansicolor-1.0.5/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/term-ansicolor-1.0.5.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/cucumber-0.6.4/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/cucumber-0.6.4.gemspec"},
-        {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/net-sftp-2.0.4/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/net-sftp-2.0.4.gemspec"},
-        {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/capistrano-2.5.18/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/capistrano-2.5.18.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/activeresource-2.3.5/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/activeresource-2.3.5.gemspec"},
         {:load_paths=>["/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib"], :loaded_from=>"/Library/Ruby/Gems/1.8/specifications/rails-2.3.5.gemspec"},
-        {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/faker-0.3.1/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/faker-0.3.1.gemspec"},
+        {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/net-sftp-2.0.4/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/net-sftp-2.0.4.gemspec"},
+        {:load_paths=>["/Users/vosechu/.bundle/ruby/1.8/gems/capistrano-2.5.18/lib"], :loaded_from=>"/Users/vosechu/.bundle/ruby/1.8/specifications/capistrano-2.5.18.gemspec"},
       ].map do |hash|
     spec = eval(File.read(hash[:loaded_from]), binding, hash[:loaded_from])
     spec.loaded_from = hash[:loaded_from]
